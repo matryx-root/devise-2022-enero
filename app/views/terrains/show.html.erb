@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @terrain.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @terrain.description %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @terrain.value %>
+</p>
+
+
+<% if user_signed_in? %>
+<%= link_to 'Edit', edit_terrain_path(@terrain) %> |
+<% end %>
+<%= link_to 'Back', terrains_path %>
