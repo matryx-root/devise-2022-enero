@@ -5,19 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require 'faker'
+#require 'faker'
 
 puts "Cleaning database..."
 Terrain.destroy_all
 
-puts 'Creating 1000 fake Terrain...'
-1000.times do
-  terrains = Terrain.new(
-  title:    Faker::Movie.title,
-  description: Faker::Food.description,
-  value:  rand(1..10)
+#puts 'Creating 1000 fake Terrain...'
+#1000.times do
+  #terrains = Terrain.new(
+  #title:    Faker::Movie.title,
+  #description: Faker::Food.description,
+  #value:  rand(1..10)
 
-  )
-  terrains.save!
-end
+  #)
+  #terrains.save!
+#end
 puts 'Finished!'
